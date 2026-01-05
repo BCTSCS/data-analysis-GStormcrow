@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class TextProcessor {
     private ArrayList<String> textList;   // The list of text from the file
     /*
@@ -16,11 +18,19 @@ public class TextProcessor {
     /*
    * Finds and removes all occurrences of each stop word from textList
    */
-/*
-   * Finds and removes all occurrences of each stop word from textList
-   */
-  public void removeStopWords(ArrayList<String> stopWords) {
 
+  public void removeStopWords(ArrayList<String> stopWords) {
+    for (String Stop : stopWords) {
+      for (int i = 0; i < 10; i++) {
+          String line = textList.get(i);
+          String[] words = line.split(" ");
+          for(int j = 0; j < words.length; j++){
+              if(words[j].equals(Stop)){
+                  words[j] = ""; 
+              }
+          }
+      }
+    }
   }
    /*
    * Returns a String containing the text in textList
