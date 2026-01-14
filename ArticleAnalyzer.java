@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.regex.Pattern;
 
-
 public class ArticleAnalyzer {
 
     private ArrayList<String> stopWords; //load from FileOperators
