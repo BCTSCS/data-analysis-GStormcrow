@@ -25,13 +25,19 @@ public class ArticleAnalyzer {
     public Article parseJson(String jsonLine){
         String text = jsonLine;
         // System.out.println("Parsing JSON Line: " + text);
-        Pattern l = Pattern.compile("\"link\": \"(.*?)\"");
-        Pattern h = Pattern.compile("\"headline\": \"(.*?)\"");
-        Pattern c = Pattern.compile("\"category\": \"(.*?)\"");
-        Pattern d = Pattern.compile("\"short_description\": \"(.*?)\"");
-        Pattern a = Pattern.compile("\"authors\": \"(.*?)\"");
-        Pattern t = Pattern.compile("\"date\": \"(.*?)\"");
-        // System.out.println("Pattern " + l.pattern());
+        // Pattern l = Pattern.compile("\"link\":\\s*\"(.*?)\"");
+        // Pattern h = Pattern.compile("\"headline\":\\s*\"(.*?)\"");
+        // Pattern c = Pattern.compile("\"category\":\\s*\"(.*?)\"");
+        // Pattern d = Pattern.compile("\"short_description\":\\s*\"(.*?)\"");
+        // Pattern a = Pattern.compile("\"authors\":\\s*\"(.*?)\"");
+        // Pattern t = Pattern.compile("\"date\":\\s*\"(.*?)\"");
+        Pattern l = Pattern.compile("\"link\":\\s*\"([^\"]+)\"");
+        Pattern h = Pattern.compile("\"headline\":\\s*\"([^\"]+)\"");
+        Pattern c = Pattern.compile("\"category\":\\s*\"([^\"]+)\"");
+        Pattern d = Pattern.compile("\"short_description\":\\s*\"([^\"]+)\"");
+        Pattern a = Pattern.compile("\"authors\":\\s*\"([^\"]+)\"");
+        Pattern t = Pattern.compile("\"date\":\\s*\"([^\"]+)\"");
+        System.out.println("Pattern " + l.pattern());
 
         Matcher link = l.matcher(text);
         // System.out.println("Matcher " + link.pattern());
@@ -45,6 +51,7 @@ public class ArticleAnalyzer {
         String headlineStr = headline.find() ? headline.group(1) : "";
         String categoryStr = category.find() ? category.group(1) : "";
         String descriptionStr = description.find() ? description.group(1) : "";
+        // descriptionStr = this.removeStopWords(descriptionStr);
         String authorStr = author.find() ? author.group(1) : "";
         String dateStr = date.find() ? date.group(1) : "";
         return new Article(linkStr, headlineStr, categoryStr, descriptionStr, authorStr, dateStr);
@@ -60,8 +67,20 @@ public class ArticleAnalyzer {
     }
 
     public static void main(String[] args) {
+        // ArticleAnalyzer analyzer = new ArticleAnalyzer();
+        // ArrayList<String> jsonLines = FileOperator.getStringList("News_Category_Dataset_v3.json");
+        // for(String line : jsonLines){
+        //     Article article = analyzer.parseJson(line);
+        //     analyzer.addArticle(article);
+        //     // System.out.println("Added Article: " + article);
+        // }
+        // for(Article line : analyzer.articles){
+        //     String cleanedDescription = analyzer.removeStopWords(line.getDescription());
+        //     System.out.println("Headline: " + line.getHeadLine());
+        //     System.out.println("Description: " + cleanedDescription);
+        // }
         ArticleAnalyzer analyzer = new ArticleAnalyzer();
-        ArrayList<String> jsonLines = FileOperator.getStringList("News_Category_Dataset_v3.json");
+        ArrayList<String> jsonLines = FileOperator.getStringList("data.txt");
         for(String line : jsonLines){
             Article article = analyzer.parseJson(line);
             analyzer.addArticle(article);
@@ -69,8 +88,11 @@ public class ArticleAnalyzer {
         }
         for(Article line : analyzer.articles){
             String cleanedDescription = analyzer.removeStopWords(line.getDescription());
+            line.setDescription(cleanedDescription);
+        }
+        for(Article line : analyzer.articles){
             System.out.println("Headline: " + line.getHeadLine());
-            System.out.println("Description: " + cleanedDescription);
+            System.out.println("Description: " + line.getDescription());
         }
     }
 
