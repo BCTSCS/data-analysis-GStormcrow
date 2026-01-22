@@ -6,12 +6,18 @@ public class ArticleAnalyzer {
 
     private ArrayList<String> stopWords; //load from FileOperators
     private ArrayList<Article> articles; //load from FileOperators json 
+    private static ArrayList<String> words;
+    private static ArrayList<Double> values;
+
 
     public ArticleAnalyzer(){
         stopWords = FileOperator.getStringList("stopwords.txt");
         System.out.println("Stop Word Count: " + stopWords.size());
         articles = new ArrayList<>();
         System.out.println("Article Count: " + articles.size());
+        words = new ArrayList<>();
+        values = new ArrayList<>();
+
     }
 
     public void addStopWord(String word){
@@ -79,21 +85,37 @@ public class ArticleAnalyzer {
         //     System.out.println("Headline: " + line.getHeadLine());
         //     System.out.println("Description: " + cleanedDescription);
         // }
-        ArticleAnalyzer analyzer = new ArticleAnalyzer();
-        ArrayList<String> jsonLines = FileOperator.getStringList("data.txt");
-        for(String line : jsonLines){
-            Article article = analyzer.parseJson(line);
-            analyzer.addArticle(article);
-            // System.out.println("Added Article: " + article);
-        }
-        for(Article line : analyzer.articles){
-            String cleanedDescription = analyzer.removeStopWords(line.getDescription());
-            line.setDescription(cleanedDescription);
-        }
-        for(Article line : analyzer.articles){
-            System.out.println("Headline: " + line.getHeadLine());
-            System.out.println("Description: " + line.getDescription());
-        }
+        // ArticleAnalyzer analyzer = new ArticleAnalyzer();
+        // ArrayList<String> jsonLines = FileOperator.getStringList("data.txt");
+        // for(String line : jsonLines){
+        //     Article article = analyzer.parseJson(line);
+        //     analyzer.addArticle(article);
+        //     // System.out.println("Added Article: " + article);
+        // }
+        // for(Article line : analyzer.articles){
+        //     String cleanedDescription = analyzer.removeStopWords(line.getDescription());
+        //     line.setDescription(cleanedDescription);
+        // }
+        // for(Article line : analyzer.articles){
+        //     System.out.println("Headline: " + line.getHeadLine());
+        //     System.out.println("Description: " + line.getDescription());
+        // }
+
+        ArrayList<String> jsonLines = FileOperator.getStringList("sentiments.txt");
+        for (String line : jsonLines) {
+            Pattern l = Pattern.compile("((?i)[a-z0-9]+),(-?\\d+.\\d+)");  //r write regex to extract the word before, and value after
+        // System.out.println(l.pattern());
+            Matcher lm =l.matcher(line); //parameter - line of text
+        // System.out.println(lm);
+        // System.out.println(line);
+            boolean found = lm.find(); 
+            String word = found ? lm.group(1) : ""; 
+            Double value = found ? Double.parseDouble(lm.group(2)) : 0.0;
+            System.out.println("Word: " + word);
+            System.out.println("Value: " +value);
+            words.add(word);
+            values.add(value);
+        }   
     }
 
 }
