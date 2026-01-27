@@ -100,7 +100,8 @@ public class ArticleAnalyzer {
         //     System.out.println("Headline: " + line.getHeadLine());
         //     System.out.println("Description: " + line.getDescription());
         // }
-
+        
+        ArticleAnalyzer analyzer = new ArticleAnalyzer();
         ArrayList<String> jsonLines = FileOperator.getStringList("sentiments.txt");
         for (String line : jsonLines) {
             Pattern l = Pattern.compile("((?i)[a-z0-9]+),(-?\\d+.\\d+)");  //r write regex to extract the word before, and value after
@@ -113,8 +114,8 @@ public class ArticleAnalyzer {
             Double value = found ? Double.parseDouble(lm.group(2)) : 0.0;
             System.out.println("Word: " + word);
             System.out.println("Value: " +value);
-            words.add(word);
-            values.add(value);
+            analyzer.words.add(word);
+            analyzer.values.add(value);
         }   
     }
 

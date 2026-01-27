@@ -1,0 +1,89 @@
+Product: iPhone 14 Pro
+Review: Absolutely love this phone! The camera quality is phenomenal, especially in low light. The battery lasts all day even with heavy use. The dynamic island feature is innovative and actually useful. Face ID works flawlessly. Best phone I've ever owned!
+
+Product: Samsung Galaxy Buds
+Review: Terrible product. They constantly disconnect from my phone. The sound quality is mediocre at best. They don't fit securely in my ears and fall out when I'm running. Battery dies way too quickly. Complete waste of money. Would not recommend to anyone.
+
+Product: Dell XPS 15 Laptop
+Review: Good laptop overall but has some issues. The screen is beautiful and the keyboard is comfortable. Performance is solid for programming and video editing. However, it gets quite hot under load and the battery life is disappointing. The price is a bit high for what you get.
+
+Product: Nintendo Switch OLED
+Review: Amazing gaming console! The OLED screen makes games look incredible. Perfect for both handheld and TV mode. Great game library with Mario, Zelda, and Pokemon. My whole family enjoys it. Highly recommend for casual and hardcore gamers alike.
+
+Product: Beats Studio Pro Headphones
+Review: These headphones are awful. The noise cancellation barely works. They're uncomfortable to wear for more than 30 minutes. Sound quality is bass-heavy and muddy. Way overpriced for the quality. Returned them after two days.
+
+Product: Sony WH-1000XM5
+Review: Best noise-canceling headphones on the market! Crystal clear sound, incredible ANC that blocks out everything. Comfortable for hours of wear. Battery lasts forever. Touch controls are intuitive. Worth every penny!
+
+Product: Instant Pot Duo
+Review: This changed my cooking! Makes perfect rice, tender meats, and amazing soups in half the time. Easy to clean and very safe to use. The preset functions work great. I use it almost daily now. Best kitchen appliance I own.
+
+Product: Fitbit Charge 6
+Review: Decent fitness tracker but nothing special. Tracks steps and heart rate accurately enough. Sleep tracking is okay. Battery lasts about 5 days. The app could be better organized. For the price, it's acceptable but not amazing.
+
+Product: Dyson V15 Vacuum
+Review: Incredible vacuum cleaner! Picks up everything from pet hair to fine dust. The laser reveals hidden dirt on floors. Battery life is sufficient for my whole house. Lightweight and easy to maneuver. Expensive but absolutely worth it for the quality.
+
+Product: Google Pixel 8
+Review: Very disappointed with this purchase. Camera freezes frequently. Battery drains incredibly fast. Phone overheats during normal use. Software is buggy despite being stock Android. Expected much better from Google. Regret buying this.
+
+Product: AirPods Pro 2
+Review: Fantastic earbuds! Noise cancellation is top-notch. Sound quality is excellent with good bass. They fit comfortably and never fall out. Transparency mode is perfect for conversations. Battery life is solid. Love the USB-C charging case.
+
+Product: Kindle Paperwhite
+Review: Perfect e-reader for book lovers. The screen looks just like real paper even in bright sunlight. Battery lasts weeks on a single charge. Waterproof so I can read in the bath. Holds thousands of books. Makes reading so convenient!
+
+Product: Ring Video Doorbell
+Review: Completely unreliable garbage. Motion detection triggers constantly for no reason. Video quality is grainy and laggy. WiFi connection drops all the time. The required subscription is a ripoff. Customer support is useless. Wish I never bought this.
+
+Product: Apple Watch Series 9
+Review: Great smartwatch with some limitations. Fitness tracking is accurate. Notifications are convenient. Battery lasts about a day which is okay. The always-on display is nice. However, it's pricey and you need an iPhone. Good but not perfect.
+
+Product: Bose QuietComfort Earbuds
+Review: Solid earbuds overall. Good noise cancellation and comfortable fit. Sound quality is balanced and clear. Battery life is decent at about 6 hours. The app is easy to use. They're good but there are better options for the price.
+
+Product: Anker PowerCore 20000
+Review: Excellent portable charger! Charges my phone 4-5 times on one charge. Compact and lightweight for the capacity. Charges devices quickly. Built quality feels premium. Has protected me from dead batteries countless times. Great value!
+
+Product: Microsoft Surface Laptop 5
+Review: Disappointing laptop. Keyboard is uncomfortable for long typing sessions. Trackpad is unresponsive at times. Performance lags with multiple apps open. Battery dies faster than advertised. Poor value for such a high price point. Not recommended.
+
+Product: GoPro Hero 12
+Review: Amazing action camera! Video stabilization is mind-blowing smooth. 4K quality looks professional. Waterproof without extra housing. Easy to use with great app integration. Battery life could be better but overall fantastic for adventures!
+
+Product: Roku Streaming Stick 4K
+Review: Does the job but nothing impressive. Streams content without buffering issues. Interface is simple but outdated looking. Remote is basic. Loads apps a bit slowly. For the price it's okay but competitors offer more features.
+
+Product: Sony PlayStation 5
+Review: Incredible gaming console! Graphics are stunning and load times are nearly instant. The controller haptics add amazing immersion. Game library keeps growing. Quiet operation. Hard to find in stock but worth the wait. Best console generation yet!
+
+Product: Logitech MX Master 3S
+Review: Best mouse I've ever used! Ergonomic design prevents wrist pain. Customizable buttons boost productivity. Smooth scrolling is satisfying. Battery lasts months. Works seamlessly across multiple devices. Perfect for long work sessions!
+
+Product: Tile Pro Tracker
+Review: Useless piece of junk. Bluetooth range is terrible, loses connection constantly. App drains phone battery. The beep is too quiet to actually find anything. Subscription model for basic features is a scam. Complete waste of money.
+
+Product: Philips Hue Smart Bulbs
+Review: Pretty good smart lighting. Colors are vibrant and customization options are extensive. Easy setup with Alexa and Google Home. Bulbs have lasted over two years. Scheduling works reliably. A bit expensive but the quality justifies it.
+
+Product: Ninja Air Fryer
+Review: Okay appliance but overhyped. Food comes out unevenly cooked sometimes. Basket size is small for a family. It's loud when running. Cleaning is moderately easy. Works fine for basic air frying but not revolutionary. Average product.
+
+Product: Razer DeathAdder V3 Mouse
+Review: Terrible gaming mouse. Clicks started double-clicking after one month. RGB lighting stopped working. Software is bloated and crashes frequently. Build quality feels cheap despite high price. Razer quality has really gone downhill. Very disappointed.
+
+Product: Echo Dot 5th Gen
+Review: Great little smart speaker! Alexa responds quickly and accurately. Sound quality is surprisingly good for the size. Easy to set up smart home devices. Affordable price point. Perfect for bedrooms or small spaces. Very happy with this purchase!
+
+Product: iPad Air 5
+Review: Excellent tablet! Perfect size between iPad and iPad Pro. M1 chip handles everything smoothly. Apple Pencil support is great for notes. Display is gorgeous. Battery lasts all day. A bit pricey but the performance and build quality are outstanding.
+
+Product: Corsair K95 Keyboard
+Review: Mixed feelings about this keyboard. Keys feel nice and mechanical switches are satisfying. RGB lighting is beautiful. However, software is buggy. Some keys stopped working after 6 months. For the premium price, expected better durability.
+
+Product: Ember Smart Mug
+Review: Love this mug! Keeps coffee at perfect temperature for hours. App control is convenient. Charges quickly on the coaster. Looks sleek on my desk. Battery lasts through my morning. Makes my coffee routine so much better!
+
+Product: HP OfficeJet Pro Printer
+Review: Worst printer ever made. Jams constantly even with good paper. Ink cartridges dry out if not used daily. Driver software crashes regularly. Slow printing speed. WiFi connection is unreliable. Absolute nightmare to own. Avoid at all costs!
