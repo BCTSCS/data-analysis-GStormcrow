@@ -2,9 +2,9 @@ public class ProductReview{
     private String name;
     private String review;
 
-    public ProductReview(String name, String pReview){
+    public ProductReview(String name, String review){
         this.name = name;
-        this.review = pReview;
+        this.review = review;
     }
 
     public String getName(){
@@ -12,5 +12,13 @@ public class ProductReview{
     }
     public String getReview(){
         return review;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public void setReview(String review){
+        this.review = review;
     }
 }
