@@ -75,17 +75,24 @@ public class ReviewCollector{
     public static void main(String[] args){
         ReviewCollector collector = new ReviewCollector();
         ArrayList<String> reviews = FileOperator.getStringList("product.txt");
-        System.out.println(reviews);
-        for(String line : reviews){
-            Pattern n = Pattern.compile("Name:\\s*(.*?)\\s*Review:\\s*(.*)");
+        // System.out.println(reviews);
+        for(int i = 0; i < reviews.size(); i+=3){
+            String line = reviews.get(i);
+            String line2 = reviews.get(i+1);
+            Pattern n = Pattern.compile("Product:\s*(.*)");
+            Pattern r = Pattern.compile("Review:\s*(.*)");
             Matcher m = n.matcher(line);
-            if(m.find()){
+            Matcher m2 = r.matcher(line2);
+            if(m.find() && m2.find()){
                 String name = m.group(1);
-                String review = m.group(2);
+                String review = m2.group(1);
                 ProductReview prodReview = new ProductReview(name, review);
+                System.out.println(name);
+                System.out.println(review);
                 collector.addReview(prodReview);
             }
         }
+        System.out.println(collector.reviewList.size() + " reviews collected.\n");
         for(ProductReview review : collector.reviewList){
             System.out.print(collector.getNumGoodReviews(review.getName()) + " good reviews for " + review.getName() + "\n");
         } 
